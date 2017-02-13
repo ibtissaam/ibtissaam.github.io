@@ -1,200 +1,170 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex">
-    <title>Happy Birthday Sam!</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   </head>
-   <body>
-     <div class="carousel carousel-slider center" data-indicators="true">
-  <div class="carousel-fixed-item center">
-    <a onclick="displayJoke(); return;" class="btn waves-effect center-align orange darken-4">Stop boring me and tell me a joke!</a>
-  </div>
-  <div class="carousel-item red darken-4 white-text" href="#one!">
-    <h2>Fun Fact</h2>
-    <h2 class="white-text center-align">23 is the lowest prime number that consists of consecutive digits.</h2>
-  </div>
-  <div class="carousel-item purple darken-1 white-text" href="#two!">
-    <h2>Fun Fact</h2>
-    <h2 class="white-text center-align">The creator of this awesome though shitty looking page has a birthday right three days after yours. How crazy is that!!</h2>
-  </div>
-  <div class="carousel-item pink darken-4 white-text" href="#three!">
-    <h2>Fun Fact</h2>
-    <h2 class="white-text center-align">Abraham Lincoln and Charles Darwin were born on your birthday. Yeah yeah we all know you and Mr. Darwin don't agree on a lot but he is famous so there is something going on for you.</h2>
-  </div>
-  <div class="carousel-item cyan darken-3 white-text" href="#four!">
-    <h2>Fun Fact</h2>
-    <h2 class="white-text center-align">You are a cute bundle of joy. All fun facts need not be in books, right?</h2>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-  <div class="col s12">
-    <h1 class="center-align">
-    ♓️🅰️🅿️🅿️🌱
-    </h1>
-  </div>
-</div>
-<div class="row">
-  <div class="col s12">
-    <h1 class="center-align">
-      Ⓑℹ️®️✝️♓️↩️🅰️🌱
-    </h1>
-  </div>
-</div>
-<div class="row">
-  <div class="col s12">
-    <h1 class="center-align">
-      ⚡️🅰️Ⓜ️
-    </h1>
-  </div>
-</div>
-  <div class="row">
-    <div class="col l6 m12">
-      <div class="card hoverable">
-        <div class="card-image">
-          <img src="http://i.imgur.com/uXJB4gh.jpg" height="200px">
-        </div>
-        <div class="card-content">
-          <p>Many many happy returns of the day</p>
-        </div>
-      </div>
-    </div>
-    <div class="col l6 m12">
-      <div class="card hoverable">
-        <div class="card-image">
-          <img src="http://i.imgur.com/TvYUQiU.jpg" height="200px">
-        </div>
-        <div class="card-content">
-          <p>May all your wishes come true</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12">
-      <div class="card hoverable">
-        <div class="card-image">
-          <div class="video-container">
-            <iframe id="display_gif" name="display_gif" src="//giphy.com/embed/26xBzGOZ4MUr6D4ty" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-          </div>
-        </div>
-        <!--         <div class="card-content">
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="search_query" name="search_query" type="text">
-              <label for="search_query">eg: Cute baby</label>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="noindex">
+        <title>Happy Birthday Sam!</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="carousel carousel-slider center" data-indicators="true">
+            <div class="carousel-fixed-item center">
+                <a onclick="displayJoke(); return;" class="btn waves-effect center-align orange darken-4">Stop boring me and tell me a joke!</a>
             </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <a onclick="callurl(); return;" class="waves-effect waves-light btn"><i class="material-icons left">search</i>Search</a>
+            <div class="carousel-item red darken-4 white-text" href="#one!">
+                <h2>Fun Fact</h2>
+                <h2 class="white-text center-align">23 is the lowest prime number that consists of consecutive digits.</h2>
             </div>
-          </div>
-          <div class="card-action">
-            <img src="PoweredBy_200px-White_HorizLogo.png" alt="Powered by giphy" />
-          </div> -->
-      </div>
-    </div>
-  </div>
-  <div class="row">
-  <div class="col s12">
-    <div class="card hoverable">
-      <div class="card-image">
-        <img id="display_yes_or_no" src="http://www.lovethispic.com/uploaded_images/169088-He-Loves-Me-He-Loves-Me-Not.gif">
-        <div class="card-content">
-          <div class="row">
-            <div class="col s12">
-              <div id="yesnoloader" style="display: none;" class="preloader-wrapper big active center-align">
-                <div class="spinner-layer spinner-blue-only">
-                  <div class="circle-clipper left">
-                    <div class="circle"></div>
-                  </div>
-                  <div class="gap-patch">
-                    <div class="circle"></div>
-                  </div>
-                  <div class="circle-clipper right">
-                    <div class="circle"></div>
-                  </div>
+            <div class="carousel-item purple darken-1 white-text" href="#two!">
+                <h2>Fun Fact</h2>
+                <h2 class="white-text center-align">The creator of this awesome though shitty looking page has a birthday right three days after yours. How crazy is that!!</h2>
+            </div>
+            <div class="carousel-item pink darken-4 white-text" href="#three!">
+                <h2>Fun Fact</h2>
+                <h2 class="white-text center-align">Abraham Lincoln and Charles Darwin were born on your birthday. Yeah yeah we all know you and Mr. Darwin don't agree on a lot but he is famous so there is something going on for you.</h2>
+            </div>
+            <div class="carousel-item cyan darken-3 white-text" href="#four!">
+                <h2>Fun Fact</h2>
+                <h2 class="white-text center-align">You are a cute bundle of joy. All fun facts need not be in books, right?</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h1 class="center-align">♓️🅰️🅿️🅿️🌱</h1>
                 </div>
-              </div>
             </div>
             <div class="row">
-              <div class="col s12">
-                <a id="yesnobutton" onclick="calllyesorno(); return;" class="red waves-effect waves-light btn"><i class="material-icons left">games</i>Love me/ Love me not</a>
-              </div>
+                <div class="col s12">
+                    <h1 class="center-align">Ⓑℹ️®️✝️♓️↩️🅰️🌱</h1>
+                </div>
             </div>
-          </div>
+            <div class="row">
+                <div class="col s12">
+                    <h1 class="center-align">⚡️🅰️Ⓜ️</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l6 m12">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="http://i.imgur.com/uXJB4gh.jpg" height="200px">
+                        </div>
+                        <div class="card-content">
+                            <p>Many many happy returns of the day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l6 m12">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="http://i.imgur.com/TvYUQiU.jpg" height="200px">
+                        </div>
+                        <div class="card-content">
+                            <p>May all your wishes come true</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <div class="video-container">
+                                <iframe id="display_gif" name="display_gif" src="//giphy.com/embed/26xBzGOZ4MUr6D4ty" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img id="display_yes_or_no" src="http://www.lovethispic.com/uploaded_images/169088-He-Loves-Me-He-Loves-Me-Not.gif">
+                        </div>
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div id="yesnoloader" style="display: none;" class="preloader-wrapper big active center-align">
+                                        <div class="spinner-layer spinner-blue-only">
+                                            <div class="circle-clipper left">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <div class="gap-patch">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <div class="circle-clipper right">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <a id="yesnobutton" onclick="calllyesorno(); return;" class="red waves-effect waves-light btn"><i class="material-icons left">games</i>Love me/ Love me not</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-      <script>
-        $(document).ready(function() {
-          $('.carousel.carousel-slider').carousel({
-            fullWidth: true
-          });
-          autoplay();
-        });
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.carousel.carousel-slider').carousel({
+                    fullWidth: true
+                });
+                autoplay();
+            });
 
-        function autoplay() {
-          $('.carousel.carousel-slider').carousel('next');
-          setTimeout(autoplay, 4500);
-        }
+            function autoplay() {
+                $('.carousel.carousel-slider').carousel('next');
+                setTimeout(autoplay, 4500);
+            }
 
-        function displayJoke() {
-          var random_number = Math.floor(Math.random() * jokes.length);
-          Materialize.toast(jokes[random_number], 8000);
+            function displayJoke() {
+                var random_number = Math.floor(Math.random() * jokes.length);
+                Materialize.toast(jokes[random_number], 8000);
+            }
 
-        }
+            var jokes = [
+              "Yo mamma so fat I took a picture of her last Christmas, and it's still printing.",
+              "Yo mamma so fat not even Dora can explore her.",
+              "Yo mamma so fat she wore a yellow raincoat and people yelled Taxi!",
+              "Yo mamma so fat she put on her lipstick with a paint roller.",
+              "Yo mamma so fat she doesn't need the internet; she's already world wide.",
+              "Yo mamma so fat she broke your family tree.",
+              "This is not a joke! You are adorable",
+              "I asked my North Korean friend how it was there, he said he couldn't complain.",
+              "I saw a sign that said 'watch for children' and I thought, 'That sounds like a fair trade.'",
+              "This is not a joke! You are super super adorable",
+              "Life is like toilet paper, you're either on a roll or taking shit from some asshole.",
+              "I dreamt I was forced to eat a giant marshmallow. When I woke up, my pillow was gone.",
+              "Sex is not the answer. Sex is the question. 'Yes' is the answer.",
+              "Crowded elevators smell different to midgets.",
+              "Never hit a man with glasses. Hit him with a bat."
+            ];
 
-        var jokes = [
-          "Yo mamma so fat I took a picture of her last Christmas, and it's still printing.",
-          "Yo mamma so fat not even Dora can explore her.",
-          "Yo mamma so fat she wore a yellow raincoat and people yelled Taxi!",
-          "Yo mamma so fat she put on her lipstick with a paint roller.",
-          "Yo mamma so fat she doesn't need the internet; she's already world wide.",
-          "Yo mamma so fat she broke your family tree.",
-          "This is not a joke! You are adorable",
-          "I asked my North Korean friend how it was there, he said he couldn't complain.",
-          "I saw a sign that said 'watch for children' and I thought, 'That sounds like a fair trade.'",
-          "This is not a joke! You are super super adorable",
-          "Life is like toilet paper, you're either on a roll or taking shit from some asshole.",
-          "I dreamt I was forced to eat a giant marshmallow. When I woke up, my pillow was gone.",
-          "Sex is not the answer. Sex is the question. 'Yes' is the answer.",
-          "Crowded elevators smell different to midgets.",
-          "Never hit a man with glasses. Hit him with a bat."
-        ];
-
-        function calllyesorno() {
-            // var search_qeury = $('#search_query').attr('value');
-            // $.ajax({
-            //   url: "http://api.giphy.com/v1/gifs/search?q=" + search_query + "&api_key=dc6zaTOxFJmzC&limit=1  ", success: function(result){
-            //     if(result.data.length > 0){
-            //       $("#display_gif").attr('src', result.data[0].embed_url);
-            //     }
-            // }});
-          $("#yesnobutton").hide();
-          $("#yesnoloader").show();
-          var boolean_value = Math.random() >= 0.5;
-          $.ajax({
-              url: "https://yesno.wtf/api", success: function(result){
-                $("#display_yes_or_no").attr('src', result.image);
-                  setTimeout(function(){
-                  $("#yesnoloader").hide();
-                  $("#yesnobutton").show();
-                  }, 2000);
-            }});
-        }
-     </script>
-  </body>
+            function calllyesorno() {
+              $("#yesnobutton").hide();
+              $("#yesnoloader").show();
+              var boolean_value = Math.random() >= 0.5;
+              $.ajax({
+                  url: "https://yesno.wtf/api", success: function(result){
+                    $("#display_yes_or_no").attr('src', result.image);
+                      setTimeout(function(){
+                      $("#yesnoloader").hide();
+                      $("#yesnobutton").show();
+                      }, 2000);
+                }});
+            }
+        </script>
+    </body>
 </html>
