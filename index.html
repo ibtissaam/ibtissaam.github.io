@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <div class="carousel carousel-slider center" data-indicators="true">
+                <div class="carousel carousel-slider center" data-indicators="true">
             <div class="carousel-fixed-item center">
                 <a onclick="displayJoke(); return;" class="btn waves-effect center-align orange darken-4">Stop boring me and tell me a joke!</a>
             </div>
@@ -34,21 +34,20 @@
         <div class="container">
             <div class="row">
                 <div class="col s12">
-                    <h1 class="center-align">HAPPY</h1>
+                    <div class="card horizontal hoverable z-depth-3 pink lighten-1">
+                        <div class="card-image">
+                            <img class="responsive-img" src="http://www.sharegif.com/wp-content/uploads/2013/09/21/birthday-cake-gif-58.gif">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <h3 class="valign white-text">HAPPY BIRTHDAY SAM!</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col s12">
-                    <h1 class="center-align">BIRTHDAY</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    <h1 class="center-align">SAM</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col l6 m12">
+                <div class="col m6 s12">
                     <div class="card hoverable">
                         <div class="card-image">
                             <img src="http://i.imgur.com/uXJB4gh.jpg" height="200px">
@@ -58,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l6 m12">
+                <div class="col m6 s12">
                     <div class="card hoverable">
                         <div class="card-image">
                             <img src="http://i.imgur.com/TvYUQiU.jpg" height="200px">
@@ -84,7 +83,7 @@
                 <div class="col s12">
                     <div class="card hoverable">
                         <div class="card-image">
-                            <img id="display_yes_or_no" src="http://www.lovethispic.com/uploaded_images/169088-He-Loves-Me-He-Loves-Me-Not.gif">
+                            <img id="display_yes_or_no" src="http://media.tumblr.com/tumblr_lzq7ghAC271qam3y3o1_500.gif">
                         </div>
                         <div class="card-content">
                             <div class="row">
@@ -105,12 +104,19 @@
                                 </div>
                                 <div class="row">
                                     <div class="col s12">
-                                        <a id="yesnobutton" onclick="calllyesorno(); return;" class="red waves-effect waves-light btn"><i class="material-icons left">games</i>Love me/ Love me not</a>
+                                        <span class="center-align">
+                                            <a id="yesnobutton" onclick="calllyesorno(); return;" class="red waves-effect waves-light btn"><i class="material-icons left">games</i>Love me/ Love me not</a>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="center-align"><i class="material-icons" style="color: red;">favorite</i></p>
                 </div>
             </div>
         </div>
